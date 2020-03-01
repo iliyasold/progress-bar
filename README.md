@@ -1,4 +1,5 @@
 <img width="1192" alt="progress__bar" src="https://user-images.githubusercontent.com/18165909/75624688-9d115600-5bc7-11ea-925e-80d8cefbcbde.png">
+
 ### Прогресс-бар
 # Progress Bar
 
