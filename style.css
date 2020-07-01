@@ -1,0 +1,119 @@
+* { font-family: sans-serif; }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  padding: 82px 40px 63px 40px;
+  width: 780px;
+  min-height: 630px;
+  background-color: #e9edef;
+  box-shadow: 0 0 74px 1px #bbb;
+}
+
+.all_price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.box-price {
+  width: 235px;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.box-price:hover {
+  transform: scale(1.16);
+  transition: 1s ease-in-out;
+}
+
+.box-price:hover .title { background-color: #3394B6; }
+
+.medium {
+  margin-left: 37px;
+  margin-right: 37px;
+}
+
+.title {
+  margin-top: 0;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: normal;
+  background-color: #7DD1ED;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.price {
+  display: block;
+  padding-top: 25px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.progress-bar {
+  height: 250px;
+  width: 100%;
+  padding: 33px 48px 25px 49px;
+  font-size: 18px;
+  background-color: #fff;
+  color: #c0c0c0;
+}
+
+.marks {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.scale {
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: #e0e0e0;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.scale_fill {
+  display: block;
+  height: 20px;
+  border-radius: 20px;
+  width: 0;
+  transition: width 1s;
+}
+
+.basic:hover ~ .progress-bar .scale_fill__bytes { width: 10%; }
+
+.basic:hover ~ .progress-bar .scale_fill__sites { width: 15%; }
+
+.basic:hover ~ .progress-bar .scale_fill__bytes,
+.basic:hover ~ .progress-bar .scale_fill__sites {
+  background-color: #7DD1ED;
+  transition: width 1s;
+}
+
+.medium:hover ~ .progress-bar .scale_fill__users { width: 35%; }
+
+.medium:hover ~ .progress-bar .scale_fill__bytes { width: 44%; }
+
+.medium:hover ~ .progress-bar .scale_fill__sites { width: 50%; }
+
+.medium:hover ~ .progress-bar .scale_fill__users,
+.medium:hover ~ .progress-bar .scale_fill__bytes,
+.medium:hover ~ .progress-bar .scale_fill__sites {
+  background-color: #7DD1ED;
+  transition: width 1s;
+}
+
+.pro:hover ~ .progress-bar .scale_fill__users,
+.pro:hover ~ .progress-bar .scale_fill__bytes,
+.pro:hover ~ .progress-bar .scale_fill__sites {
+  width: 100%;
+  background-color: #7DD1ED;
+  transition: width 1s;
+}
