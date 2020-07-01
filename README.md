@@ -10,7 +10,7 @@
 ## How to use?
 * Clone repository
 
-```git clone https://github.com/iliyasold/progress__bar.git```
+```git clone https://github.com/iliyasold/progress-bar.git```
 
 * Install dependencies
 
